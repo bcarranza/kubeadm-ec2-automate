@@ -20,7 +20,7 @@ resource "aws_instance" "master" {
 
   }
   timeouts {
-    create = "20m"
+    create = "10m"
   }
   tags = {
     Name = "master-${var.k8s_name}"
