@@ -90,9 +90,6 @@ jobs:
         ansible-galaxy collection install community.general
         ansible-galaxy collection install cloud.terraform
 
-    - name: Initialize Terraform
-      run: terraform init             #### required for the runner to fetch state file and generate dynamic inventory ###
-
     - name: Create inventory.yml
       run: |
         cat <<EOF > inventory.yml
