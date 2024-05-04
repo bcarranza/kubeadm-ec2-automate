@@ -12,8 +12,7 @@ terraform {
 
   }
   backend "s3" {                                  ### backend ###
-    bucket = "your-bucket-name"
-    key = "your-bucket-key"
+    bucket = "terraform-state-851725528249"
  } 
 }
 
